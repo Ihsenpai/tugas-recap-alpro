@@ -1,41 +1,41 @@
 #include <iostream>
 
 using namespace std;
-
+ int menu;
+    int length, time, speed;
 int main() {
     
-    int pilihan;
-    float jarak, waktu, kecepatan;
+   
 
     
-    cout << "Pilih rumus yang ingin digunakan:" << endl;
-    cout << "1. v = s / t" << endl;
-    cout << "2. s = v * t" << endl;
-    cout << "3. t = s / v" << endl;
-    cout << "Masukkan nomor rumus: ";
-    cin >> pilihan;
+    cout << "Pilih Operasi yang digunakan" << endl;
+    cout << "1. Menghitung Kecepatan:" << endl;
+    cout << "2. Menghitung Jarak:" << endl;
+    cout << "3. Menghitung Waktu" << endl;
+    cout << "Masukkan nomor : ";
+    cin >> menu;
 
     
     cout << "Masukkan nilai jarak: ";
-    cin >> jarak;
+    cin >> length;
     cout << "Masukkan nilai waktu: ";
-    cin >> waktu;
+    cin >> time;
     cout << "Masukkan nilai kecepatan: ";
-    cin >> kecepatan;
+    cin >> speed;
 
  
-    switch (pilihan) {
+    switch (menu) {
         case 1:
-            kecepatan = jarak / waktu;
-            cout << "Kecepatan: " << kecepatan << endl;
+            speed = static_cast<float>(length) / static_cast<float>(time);
+            cout << "Kecepatan: " << speed << endl;
             break;
         case 2:
-            jarak = kecepatan * waktu;
-            cout << "Jarak: " << jarak << endl;
+            length = static_cast<float>(speed) * static_cast<float>(time);
+            cout << "Jarak: " << length << endl;
             break;
         case 3:
-            waktu = jarak / kecepatan;
-            cout << "Waktu: " << waktu << endl;
+            waktu = static_cast<float>(length) / static_cast<float>(speed);
+            cout << "Waktu: " << time << endl;
             break;
         default:
             cout << "Pilihan tidak valid." << endl;

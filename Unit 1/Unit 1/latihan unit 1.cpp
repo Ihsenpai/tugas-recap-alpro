@@ -39,7 +39,7 @@ int main() {
             cout << "Waktu: " << time << endl;
             break;
         default:
-            cout << "Pilihan tidak valid." << endl;
+            cout << "Pilihan tidak valid" << endl;
     }
 
     return 0;
